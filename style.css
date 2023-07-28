@@ -1,0 +1,128 @@
+:root{
+  --dark-blue: #574AE8;
+  --light-blue: #3EA1DB;
+  --gray: #717171;
+  --gray-dark: #1A202C;
+  --grayish-white: #F9F9F9;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca";
+  font-size: 62.5%;
+}
+
+header, main{
+  padding: 0 20vw;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+header{
+  background: linear-gradient( 
+    to right, 
+    var(--dark-blue),
+    var(--light-blue)
+  );
+  color: white;
+}
+
+header div{
+  display: flex;
+}
+
+.titles{
+  justify-content: space-between;
+  padding: 4rem 0 3rem;
+}
+
+.search{
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+.search input{
+  width: 100%;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  font-family: Inter;
+  border-radius: 0 5px 5px 0;
+}
+
+.search button{
+  border-radius: 5px 0 0 5px;
+  padding: 0 2rem;
+}
+
+h1,h2{
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.search input, .search button{
+  background-color: rgba(255, 255, 255, .25);
+  color: white;
+  border: none;
+}
+
+.search input::placeholder{
+  color: white;
+  opacity: 0.5;
+}
+
+body{
+  background-color: var(--grayish-white);
+}
+
+.card div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card{
+  background: white;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+}
+
+.card button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+h3{
+  color: var(--gray-dark);
+  font-weight: 400;
+  margin: 1.5rem 0 1rem;
+  font-size: 2rem;
+}
+
+small{
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+p{
+  font-size: 1.5rem;
+  color: var(--gray);
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+@media(max-width:768px){
+  header, main{
+    padding: 0 10vw;
+  }
+}
+
+@media(max-width:570px){
+  header, main{
+    padding: 0 5vw;
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 01</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="titles">
+      <h1>Codelândia</h1>
+      <h2>Blog</h2>
+    </div>
+    <div class="search">
+      <button>
+        <img src="img/VectorSearch.svg" alt="Pesquisar">
+      </button>
+      <input type="text" placeholder="Pesquisar no blog">
+    </div>
+  </header>
+  <main>
+    <div class="card">
+      <div>
+        <small>02 de jul, 2021</small>
+        <button><img src="img/Vectorheath.svg" alt="Gostei"></button>
+      </div>
+      <h3>Agora é oficial: o Windows 11 está vindo</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minus possimus, ipsa hic quisquam ipsum voluptatum facere soluta.</p>
+    </div>
+    <div class="card">
+      <div>
+        <small>02 de jul, 2021</small>
+        <button><img src="img/Vectorheath.svg" alt="Gostei"></button>
+      </div>
+      <h3>Agora é oficial: o Windows 11 está vindo</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quasi illum quod exercitationem ducimus ad perspiciatis iure neque excepturi? Veniam ipsa impedit quos, sequi laudantium est iusto officia aperiam labore?</p>
+    </div>
+    <div class="card">
+      <div>
+        <small>02 de jul, 2021</small>
+        <button><img src="img/Vectorheath.svg" alt="Gostei"></button>
+      </div>
+      <h3>Agora é oficial: o Windows 11 está vindo</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </main>
+  <script src="https://unpkg.com/scrollreveal"></script>
+<script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.card', { delay: 50 });
+        ScrollReveal().reveal('.card div', { delay: 100 });
+        ScrollReveal().reveal('.card h3', { delay: 125 });
+        ScrollReveal().reveal('.card p', { delay: 150 });
+</script>
+</body>
+</html>
